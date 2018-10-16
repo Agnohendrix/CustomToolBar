@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -24,11 +25,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void nascondi(View view) {
         ActionBar ab = getSupportActionBar();
-        ab.hide();
+
         Intent intent = new Intent(this, MenuActivity.class);
         intent.putExtra(MESSAGE, "Prova");
         startActivity(intent);
     }
+
+   
 
 
 }
