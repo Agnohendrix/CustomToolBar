@@ -16,9 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MenuActivity"
-                android:label="Seconda Activity"
-                android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".MenuActivity"
+            android:label="Seconda Activity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity android:name=".QuizActivity"
+            android:label="Quiz"
+            android:parentActivityName=".MenuActivity"/>
+
+
     </application>
 
 </manifest>
